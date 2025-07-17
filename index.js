@@ -3,6 +3,8 @@ import express from "express";
 const app = express();
 app.use(express.static("public"));
 
+const PORT = process.env.PORT || 3000;
+
 app.get("/", (req, res) => {
   res.sendFile("index.html", { root: __dirname });
 });
@@ -16,6 +18,6 @@ app.get("/api/get-suggestions", async (req, res) => {
   res.json(data);
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("Server started at http://localhost:3000");
 });
