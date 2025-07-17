@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="search-Container">
-      <h1>Google-Search-Keyword-Tool</h1>
-      <p>Provides the most Googled queries for a query prefix.</p>
-      <input id="searchInput" placeholder="Search" />
-    </div>
-    <div id="results-container">
-      <h3>Keywords</h3>
-      <ol id="resultsList"></ol>
-      <button>Copy</button>
+    <div class="container">
+      <div id="search-container">
+        <img src="google-query-extractor.png" alt="Google Logo" />
+        <p>Provides the most Googled queries for a query prefix.</p>
+        <input id="searchInput" placeholder="Enter a query..." />
+      </div>
+      <div id="results-container">
+        <h2>Keywords</h2>
+        <ol id="resultsList"></ol>
+        <button id="copyButton">Copy</button>
+      </div>
     </div>
   </body>
   <script src="script.js"></script>
