@@ -1,0 +1,19 @@
+{
+  "name": "google-search-keyword-tool",
+  "version": "1.0.0",
+  "description": "Provides the most searched queries when you provide a query prefix.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
